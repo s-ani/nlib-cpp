@@ -1,0 +1,11 @@
+
+# Ignore all bazel-* symlinks.
+/bazel-*
+# Ignore Bazel verbose explanations
+--verbose_explanations
+# Ignore Vim files
+*.swp
+# Ignore QtCreator Project file
+CMakeLists.txt.user
+# Ignore VS Code files
+.vscode/*
