@@ -18,3 +18,14 @@ cc_library(
     deps = [
     ],
 )
+
+cc_test(
+    name = "lru_test",
+    srcs = ["internal/lru_test.cc"],
+    copts = NLIB_TEST_COPTS,
+    linkopts = NLIB_DEFAULT_LINKOPTS,
+    deps = [
+        ":lru_cache",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
